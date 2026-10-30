@@ -123,8 +123,14 @@ Now look at a numerical variable, such as `winpercent`. Create an histogram for 
 ```{r}
 # Your code here
 
+ggplot(candy_df, aes(x = winpercent)) +
+  geom_histogram(bins = 30) +
+  labs(title = "Candy Win Percentages", 
+       x = "Percenatage of wins",
+       y = "Number of Candies") +
+  theme_minimal()
 ```
-
+With different binwidths/bins, the number of bars in the histogram changes so the amount of detail in the data that can be seen.
 
 # Data viz - more than one variable
 
@@ -136,14 +142,18 @@ Fill in the blanks, remove the # symbol in front of your code and the execute th
 
 ```{r}
 # Your code here
-#ggplot(candy_df, aes(x = ___________)) +
-#  geom_histogram() +
-#  facet_wrap(___________)
+ggplot(candy_df, aes(x = winpercent, fill = caramel)) +
+geom_histogram() +
+facet_wrap(~ chocolate) +
+  labs(title = "Percentage of Wins from candies",
+       subtitle = "by chocolate content")
 
 ```
 
 
 - Consider adding the `fill = caramel` within the aes() vs. geom_histogram(), what do you get? 
+
+
 
 ## Exercise 5
 
