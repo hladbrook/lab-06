@@ -66,8 +66,8 @@ Ensure that you have the following two lines of code at the top of `lab-05.Rmd` 
 library(tidyverse)
 library(ggplot2)
 
-# Install that package first 
-# install.packages("fivethirtyeight")
+#Install that package first 
+install.packages("fivethirtyeight")
 library(fivethirtyeight)
 ```
 
@@ -80,10 +80,16 @@ glimpse(candy_df)
 
 ## Exercise 1
 
+_Write your comments about results_
+
 How many observations and variables are in this dataset?
+
+there are 85 rows and 13 columns 
+
 Did you identify the type of variables, remember that this detail is crucial to create which kind of data visualization in general. 
 
-_Write your comments about results_
+logical, double and character
+
 
 # Data viz - One variable at a time
 
@@ -99,9 +105,16 @@ candy_df <- candy_df %>%
 Complete the following code to get the data viz to represent "how many candies contain caramel via bar plot". Fill in the blanks, remove the # symbol in front of your code and the execute the code chunk via green play button.
 
 ```{r}
-# ggplot(candy_rankings, aes(x = ______)) +
-#  _____() +
+ggplot(candy_rankings, aes(x = caramel)) +
+geom_bar() +
+  labs(title = "Number of Candies that Contain Caramel")
+
+ggplot(candy_rankings, aes(x = chocolate)) +
+  geom_bar() +
+  labs(title = "Number of Candies that Contain Chocolate")
 ```
+
+More candies dont contain caramel than those who do. a greater proportion of candies contain chocolate than caramel. there are more candies that contain chocolate than caramel.
 
 ## Exercise 3
 
