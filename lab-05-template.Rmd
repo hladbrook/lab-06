@@ -162,6 +162,13 @@ Create a visualization that examines the relationship between a candy’s win pe
 ```{r}
 # your code here
 
+candy_rankings %>%
+  group_by(chocolate) %>%
+  summarise(
+    n = n(),
+    mean_win = mean(winpercent),
+    median_win = median(winpercent)
+  )
 ```
 
 - Consider the similar pair by replacing chocolate with caramel, fruity and compare their results. 
