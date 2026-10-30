@@ -23,7 +23,7 @@ knitr::include_graphics("img/Speaking-the-world.jpg")
 
 _Write your comments about image 1 below_
 
-
+the bars are not to scale with the data such as comparison between english and spanish. the top bar is too wide and also 1026 billion speakers is not possible.
 
 
 ## Image 2
@@ -34,7 +34,7 @@ knitr::include_graphics("img/rose-pop-density-total-area-bw.jpg")
 
 _Write your comments about image 2 below_
 
-
+the slices are all different heights making the size more difficult to read. white circle in the centre als distorts the comparisons. colour rather than black and white may make it easier to distinguish.
 
 
 ## Image 3
@@ -45,7 +45,7 @@ knitr::include_graphics("img/life-expectancy-rule-of-law.png")
 
 _Write your comments about image 3 below_
 
-
+There should be a title to help with understanding what it is.the transparency and colour choice makes it very difficult to distinguish between countries. there is no key so the colours and sizes have no reason.
 
 
 ## Image 4
@@ -56,7 +56,7 @@ knitr::include_graphics("img/global-income-dist.PNG")
 
 _Write your comments about image 4 below_
 
-
+The categories don't really have clear themes as some are just countries, some are continents and some are classifications of countries. The x-axis scale is very random.
 
 # Data Visualization for Halloween 
 
